@@ -90,18 +90,17 @@ It is a fully-managed cloud platform where you can host static sites, backend AP
 
 To create a database on Render and creating a Environment file, follow the given steps
 
-1. Visit the official [Render](https://render.com/) and create an Account or Log in. 
+1. Visit the official [Render](https://render.com/) website and create an Account or Log in. 
 2. Next, click `New PostgreSQL` in the PostgreSQL section to create a new database service. 
 3. Give an appropriate name to the DB instance and database.
 4. Give user name and select a region (default `Oregon(US West)` is fine).
 5. Select <b>Free</b> option in the Instance type and hit <b>Create Database</b> button at the bottom.
 
 A new empty PostgreSQL database service will then be created. You can view all the services on your Render Dashboard.
-> **Note** <br>
 > The PostgreSQL database service will remain free on render only upto 3 months.
 
 
-Next, create a .env file in the root directory containing the credentials of your database.  
+Next, create a `.env` file in the root directory containing the credentials of your database.  
 Sample .env file looks like:
 ```
 DATABASE_HOST=your_database_host
@@ -111,13 +110,13 @@ PASSWORD=your_database_password
 DATABASE_PORT=your_database_port
 ```
 
-> **Note** <br>
-> ```DATABASE_HOST``` in ```.env``` should be of form ```<Hostname>.<region>-postgres.render.com```. For example, if the region of database is ```Oregon (US West)```, then hostname can be ```<Hostname>.oregon-postgres.render.com```
+> ```DATABASE_HOST``` in ```.env``` should be of form ```<Hostname>.<region>-postgres.render.com```.  
+> For example, if the region of database is ```Oregon (US West)```, then hostname can be ```<Hostname>.oregon-postgres.render.com```
   
 
 You can get all this database credentials by visiting the PostgreSQL database service you created on your render dashboard.
 
-Once the .env file is setup, next run the createdatabase.py script using the following command in the terminal:
+Once the .env file is setup, next run the `createdatabase.py` script using the following command in the terminal:
 ```
 python createdatabase.py  
 ```
