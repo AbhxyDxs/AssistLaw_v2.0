@@ -27,7 +27,7 @@
 - `Python` and `NodeJS`should be installed on your machine before running this application
 - Clone the repository into your system, and enter the repository in your terminal:
 ```
-git clone https://github.com/AbhxyDxs/AssistLaw.git
+git clone https://github.com/AbhxyDxs/AssistLaw_v2.0.git
 cd Legal-Documentation-Assistant/
 ```
 
